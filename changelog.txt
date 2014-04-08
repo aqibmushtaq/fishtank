@@ -1,0 +1,31 @@
+Version 1.0 (Base)
+- FishTank Environment
+	- Background Image
+	- HUD for adding fish and food
+	- HUD information updates automatically
+	- Status bar showing general Fish Tank information
+		- Number of fishes hungry (if at least 1 fish is hungry then it turns red)
+		- Number of alive fish
+		- Number of dead fish
+		- Fish file which is being used
+	- Menu bar for saving/loading fishes and viewing application information
+	- Dimensions
+		- Width matches the screen width
+		- Height is maximum of 768px
+	- Click fishtank to add food when the food toggle is on
+- Fishes
+	- Movement
+		- Either move towards a certain point on the fishtank (for food) or move in random motion
+		- Fishes have horizonal and verticle velocity
+		- Fishes motion (or velocity) is dependent on thier hunger
+		- Fish change directions (or velocity) when they reach the edges of the fish tank
+	- Hunger
+		- The maximum hunger level of any fish is 10 (might change this to variable maximum hunger levels for each fish)
+		- Fishes loose 1 hunger level every 10 seconds
+		- When hunger, the fish tank will find the closest peice of food (using pythagoras theorem) and tell the fish to move towards the food, and eat it then reset the fishes hunger to 10
+	- Images
+		- Two images for each fish (one facing right and the other facing left)
+		- The images used depends on the direction (or velocity) in which the fish is moving
+- Other features
+	- Save fishes into a file (.fish)
+	- Load the fishes from the file
